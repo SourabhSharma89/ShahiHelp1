@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9,10,11 IE=EDGE" />
+<meta name="viewport" content="width=device-width">
+<link type="text/css" rel="stylesheet" href="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/RFHC_baseForExample_V3.css">
+<script src="template_files/jquery/jquery.min.js"></script>
+<script src="template_files/jquery/calci.js"></script> 
+<script src="template_files/jquery/jquery-ui.min.js"></script>
+<script src="template_files/jquery/jquery.ui.touch-punch.min.js"></script>
+<script src="template_files/jquery/functionUses.js"></script>
+<script src="content_files/content.js"></script>
+<script src="content_files/app.js"></script> 
+<script src="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/baseForExamplePopupInput_V1.js"></script>
+<script src="template_files/jquery/middleForAll.js"></script>
+<link type="text/css" rel="stylesheet" href="content_files/content.css">
+<link type="text/css" rel="stylesheet" href="template_files/css/ExpCalci.css">
+<script src="https://www.educosoft.com/sharedSite/HTML5Common/MFExample/ExampleDataSave.js"></script>
+
+</head>
+<body>
+
+<div class="warning">
+
+<div class="OrientImage"><img src="image/orientationExample.png" alt="Orientation Change" class="orient"></div>
+
+</div>
+
+
+ 
+
+<div id='LoadingDiv' style="text-align:center; user-select:none"><img src="image/Loading.gif" style="width:20%"/></div>
+<script>
+ var height = $(window).innerHeight();
+ 
+ var LoadingDivHeight = $('#LoadingDiv').height();
+ 
+ var finalHeight = (height-LoadingDivHeight)/2;
+
+  $('#LoadingDiv').css({'margin-top':finalHeight+"px"})
+  ////////////////////////////////////////////////////////////////
+	 $('img').on('dragstart', function(event) { event.preventDefault();});
+  ///////////////////////////////////////////////////////////////
+</script>
+<div class="container-fluid" id='QuesDiv' style="display:none">
+
+
+
+<div class="header">
+<div class="new_h">
+	<div class="section1"><h3>Objective: <font color='#009'>Quadrilaterals: Parallelograms and Kites</font></h3></div><!-- section1 closed-->
+    <div class="wholeSection">
+	<div class="section2">
+    	<input type="button" value="Try Again" class="newSet headerButton" onClick="nextQuesGeneration()">
+        <input type="button" value="Solution" class="solution headerButton" onClick="showSolution()">
+    </div>      <!-- section2 closed-->
+    <div class="section3">
+        <div class="questionSection">
+
+<div class="question">
+Find the following information for the function, and then sketch its graph.
+
+<div class="case case1">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> <i>x</i> 
+                <span class="hidden">.</span>–<span class="hidden">.</span> 12 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 8 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 16</span>
+            </div>
+            </div>
+</div>
+
+<div class="case case2">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>+<span class="hidden">.</span> <i>x</i> 
+                <span class="hidden">.</span>–<span class="hidden">.</span> 6 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 7 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 10</span>
+            </div>
+            </div>
+</div>
+
+<div class="case case3">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> <i>x</i> 
+                <span class="hidden">.</span>–<span class="hidden">.</span> 6 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 4 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 3</span>
+            </div>
+            </div>
+</div>
+
+<div class="case case4">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 5 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 4 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 3 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 2</span>
+            </div>
+            </div>
+</div>
+
+<div class="case case5">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>+<span class="hidden">.</span> 3 <i>x</i> 
+                <span class="hidden">.</span>–<span class="hidden">.</span> 10 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>+<span class="hidden">.</span> 2 <i>x</i> 
+                <span class="hidden">.</span>–<span class="hidden">.</span> 15</span>
+            </div>
+            </div>
+</div>
+
+<div class="case case6">
+            <div class="blue_color">
+            <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b>
+            <div class="fraction bold">
+                <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>+<span class="hidden">.</span> 7 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 6 </span>
+                <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>+<span class="hidden">.</span> 4 <i>x</i> 
+                <span class="hidden">.</span>+<span class="hidden">.</span> 3 </span>
+            </div>
+            </div>
+</div>
+
+
+</div>      <!-- div question-->
+          
+
+
+        </div>	<!-- questionSection closed-->    
+         <div class="ClickToAnsDiv"> Click here to enter answer </div>
+ <div class="ClickToAnsDiv ClickToAnsDivForDeviceOnPopupInputs"> Click here to enter answer </div>
+
+    </div>	<!-- section3 closed-->
+    </div>	<!-- wholeSection closed-->
+   
+   </div>	<!-- new_h closed-->
+   
+    <div class="section4 KeypadArea calc">
+    	<div class="KeypadBoundary">
+        	<div class="keypadNote"><b>Use me to enter the answer</b></div>
+            <div class="keypadKeys">
+                <button class="calc_btn new_calc_btn bt"  id="one" value="1"  data-value="¹">1</button>
+                <button class="calc_btn bt new_calc_btn" id="two" value="2" data-value="²">2</button>
+                <button class="calc_btn bt  new_calc_btn" id="three" value="3" data-value="³">3</button>
+                <button class="calc_btn bt  new_calc_btn" id="four" value="4" data-value="⁴">4</button>
+                <button class="calc_btn bt new_calc_btn" id="five" value="5" data-value="⁵">5</button>
+                <button class="calc_btn bt new_calc_btn" id="six" value="6" data-value="⁶">6</button>
+                 
+                <button class="back ThreeCommonBtns TCB" value="back">Back</button>
+                
+                
+                <button class="calc_btn bt new_calc_btn" id="seven" value="7" data-value="⁷">7</button>
+                <button class="calc_btn bt new_calc_btn" id="eight" value="8" data-value="⁸">8</button>
+                <button class="calc_btn bt new_calc_btn" id="nine" value="9" data-value="⁸">9</button>  
+                <button class="calc_btn bt new_calc_btn" id="zero" value="0" data-value="⁰">0</button>
+                <button class="calc_btn spec_char vb subtract bt new_calc_btn" id="minus" value=" – " data-value=" – "><b>–</b></button>
+                <button class="calc_btn spec_char vb subtract bt new_calc_btn" id="plus" value=" + " data-value=" + "><b>+</b></button>
+                <button class="delete ThreeCommonBtns TCB newDelBtn"  value="delete">Delete</button>
+               	<button class="calc_btn  vb subtract bt new_calc_btn" id="point" value="." data-value="."><b>.</b></button>
+                <button class="calc_btn tab subtract ThreeCommonBtns"><b>Tab &nbsp; &#8644;</b></button>
+                <button class="calc_btn  vb subtract bt new_calc_btn hidden" value="," data-value=","><b>,</b></button>
+                <button class="clear ThreeCommonBtns TCB newClearBtn" value="Clear">Clear</button>
+                
+                
+                
+      
+            </div>	    <!-- keypadKeys closed-->    
+        </div>	    <!-- KeypadBoundary closed-->
+        
+         
+        <div class="inputAndDoneSpace">
+         <div class="remark"><div class="respond bold" style="color:#339966;"><span id="FB_TxtBox"></span></div></div>
+        
+    </div>	    <!-- section4 closed-->
+    
+</div>	    <!-- header closed-->
+</div>
+
+<div class="container">
+<div class="AreaForKeypadAndInputInDevice">
+    <div class="KeypadBoundary KeyPadKeyBoundaryDevice calc">
+        <div class="keypadNote keypadNoteDevice"><b>Use me to enter the answer</b></div>
+        <div class="keypadKeys keypadKeysDevice">
+            <button class="calc_btn bt KeyPadKeyDevice"  id="one" value="1"  data-value="¹">1</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="two" value="2" data-value="²">2</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="three" value="3" data-value="³">3</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="four" value="4" data-value="⁴">4</button>
+                
+            <button class="back ThreeCommonBtns KeyPadKeyDevice" value="back">Back</button>
+            
+            <button class="calc_btn bt KeyPadKeyDevice" id="five" value="5" data-value="⁵">5</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="six" value="6" data-value="⁶">6</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="seven" value="7" data-value="⁷">7</button>
+            <button class="calc_btn bt KeyPadKeyDevice" id="eight" value="8" data-value="⁸">8</button>
+            
+            <button class="delete ThreeCommonBtns KeyPadKeyDevice"  value="delete">Delete</button>
+            
+            <button class="calc_btn bt KeyPadKeyDevice" id="nine" value="9" data-value="⁹">9</button>  
+            <button class="calc_btn bt KeyPadKeyDevice" id="zero" value="0" data-value="⁰">0</button>
+            <button class="calc_btn subtract bt KeyPadKeyDevice" id="minus" value=" – " data-value=" – "><b>–</b></button>
+            <button class="calc_btn subtract bt KeyPadKeyDevice" id="plus" value=" + " data-value=" + "><b>+</b></button>
+            <button class="clear ThreeCommonBtns KeyPadKeyDevice" value="Clear">Clear</button>
+            <button class="calc_btn  vb subtract bt KeyPadKeyDevice" id="point" value="." data-value="."><b>.</b></button>
+            <button class="calc_btn  vb subtract bt KeyPadKeyDevice"  value="," data-value=","><b>,</b></button>
+            
+        </div>	<!-- keypadKeys closed--> 
+        
+   
+    </div>	<!-- KeypadBoundary closed-->
+        
+           <div class="inputAndDoneSpaceFordevice">
+        
+         <!--<div class="crossDiv"><img src="image/crossImg3.png" class=" Cross_input"/></div>-->
+   <!--    <div class="center1"><font color='#009'><i><b>Enter your Answer</b></i></font></div>-->
+       
+<div class="input_div">
+
+<table class="input_table relative">
+<tr>
+
+<td>
+<table class="subtbl01">
+<span class=" imgMsk blue_color bold" style="font-size:85%; text-align:center"><em>click on the garph to select.</em> <br><span style="visibility:hidden;"></span>(5 Point)</span>
+
+<tr>
+<td class="option1 tc relative" colspan="2">
+<img src="image/Img1a.png" class="imginput0 imgD1 graphoption graphoption1 option1a" style="margin:0 auto;"> 
+</td>
+</tr>
+
+<tr>
+<td class="option2 tc relative" colspan="2">
+<img src="image/Img1b.png" class="imginput0 imgD1 graphoption graphoption1 option1a" style="margin:0 auto;"> 
+</td>
+</tr>
+
+<tr>
+<td class="option3 tc relative" colspan="2" style="border-bottom:none;">
+<img src="image/Img1c.png" class="imginput0 imgD1 graphoption graphoption1 option1a" style="margin:0 auto;"> 
+</td>
+</tr>
+
+</table>
+</td>
+
+ 
+<td>
+  <table>
+  <tr>
+   <td class="td1 forNoWrap" style="text-align:right;">
+    <b><span class="port"><span class="font_nrml red_color">Zero of &nbsp;<b><i>f</i> (<i>x</i>):</b></span> <span class="hidden">.</span> <i  class="red_color">x</i></span></b>
+   </td>
+   
+   <td style="text-align:center;"><span style="visibility:hidden;">1</span><strong class="red_color">=</strong><span style="visibility:hidden;">1</span></td>
+   
+   <td class="td2" style="text-align:left;">
+	<div class="inputDiv"><input type="text" class="input1 input" id="inputText" style="text-transform:lowercase;" spellcheck="false" tabindex="1" onKeyPress= "keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+   </td>
+   
+   <td class="td02 td03top bold blue_color" style="text-align:left; font-size:85%;">2 Point</td>
+  
+   <td class="td3"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng1">&#10006;</b><b class="FntGrmnd green Wrt1">&#10004;</b> </div></td>
+   <td class="txt_lft pmtwrth">
+    <div class="txt_Score_total txt_Score_total1" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu1"></span>/2)</b></div>
+    <div class="hidden fntsz " style="display:inline-block;">S</div>
+   </td>
+  </tr>
+  
+   <!--    2nd Row  -->
+  
+  <tr>
+  <td class="td1 forNoWrap" style="text-align:right;">
+   <b><span class="port"><span class="font_nrml red_color">Horizontal asymptotes<strong>:</strong></span> <span class="hidden">.</span> <i class="red_color">y</i></span></b>
+  </td>
+  
+  <td style="text-align:center;"><span style="visibility:hidden;">1</span><strong class="red_color">=</strong><span style="visibility:hidden;">1</span></td>
+               
+  <td class="td2" style="text-align:left;">
+    <div class="inputDiv"><input type="text" class="input2 input" id="inputText1" style="text-transform:lowercase;" spellcheck="false" tabindex="2" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+   </td>
+   
+   <td class="td02 td03top  bold blue_color" style="text-align:left; font-size:85%;">2 Point </td>
+   
+   <td class="td3"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng2">&#10006;</b><b class="FntGrmnd green Wrt2">&#10004;</b> </div></td>
+   
+   <td class="txt_lft pmtwrth">
+     <div class="txt_Score_total txt_Score_total2" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu2"></span>/2)</b></div>
+     <div class="hidden fntsz " style="display:inline-block;">S</div>
+   </td>             
+ </tr>
+       
+      <!--    3nd Row  -->  
+            
+  <tr>
+    <td class="td1 forNoWrap td03top" style="text-align:right;">
+       <b><span class="port"><span class="font_nrml red_color">Vertical asymptotes<strong>:</strong></span> <span class="hidden">.</span> <i class="red_color">x</i></span></b>
+    </td>
+    
+    <td class="td03top" style="text-align:center;"><span style="visibility:hidden;">1</span><strong class="red_color">=</strong><span style="visibility:hidden;">1</span></td>
+               
+    
+    <td class="td2 td03top" style="text-align:left;">
+       <div class="inputDiv"><input type="text" class="input3 input" id="inputText2" style="text-transform:lowercase;" spellcheck="false" tabindex="3" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+      </td>
+                
+      <td class="td02 td03top  bold blue_color" style="text-align:left; font-size:85%;">2 Point</td>
+                
+      <td class="td3 td03top"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng3">&#10006;</b><b class="FntGrmnd green Wrt3">&#10004;</b> </div></td>
+       
+      <td class="txt_lft pmtwrth">
+        <div class="txt_Score_total txt_Score_total3" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu3"></span>/2)</b></div>
+        <div class="hidden fntsz " style="display:inline-block;">S</div>
+      </td>        
+   </tr>
+                
+         <!--    4nd Row  -->    
+         
+   <tr>
+     <td class="td1 forNoWrap td03top" style="text-align:right; vertical-align:middle">
+        <b><span class="port"><span class="font_nrml red_color">Complete the table of values</span></span></b>
+     </td>
+     
+     <td class="td03top" style="text-align:center; vertical-align:middle"><span style="visibility:hidden;">1</span><strong class="red_color">=</strong><span style="visibility:hidden;">1</span></td>
+               
+     <td class="td2 td03top" style="text-align:left;" colspan="2">
+     <table class="intbl bold" style="text-align:center; color:red;">
+       <tr>
+        <td style="border:none; visibility:hidden;">&nbsp;&nbsp;<i>x</i>&nbsp;&nbsp;</td>
+        <td style="border:none; visibility:hidden;">3</td>
+        <td style="border:none; visibility:hidden;">5</td>
+        <td style="border:none;"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng6">&#10006;</b><b class="FntGrmnd green Wrt6">&#10004;</b> </div></td>
+        <td style="border:none;"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng7">&#10006;</b><b class="FntGrmnd green Wrt7">&#10004;</b> </div></td>
+      </tr>
+                    
+      <tr>
+     <td class="brdrBlue">&nbsp;<i>x</i>&nbsp;</td>
+     <td>3</td>
+     <td>5</td>
+     <td><div class="inputDiv"><input type="text" class="input6 input" id="inputText5" style="text-transform:lowercase;" spellcheck="false" tabindex="6" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div></td>
+     <td><div class="inputDiv"><input type="text" class="input7 input" id="inputText6" style="text-transform:lowercase;" spellcheck="false" tabindex="7" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div></td>
+    </tr>
+    
+    <tr>
+     <td><i>y</i></td>
+     <td><div class="inputDiv"><input type="text" class="input4 input" id="inputText3" style="text-transform:lowercase;" spellcheck="false" tabindex="4" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div></td>
+     <td><div class="inputDiv"><input type="text" class="input5 input" id="inputText4" style="text-transform:lowercase;" spellcheck="false" tabindex="5" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div></td>
+     <td>– 1</td>
+     <td>2</td>
+     
+    </tr>
+                  
+      <tr>
+         <td style="border:none; visibility:hidden;"><i>y</i></td>
+         <td style="border:none;"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng4">&#10006;</b><b class="FntGrmnd green Wrt4">&#10004;</b> </div></td>
+         <td style="border:none;"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng5">&#10006;</b><b class="FntGrmnd green Wrt5">&#10004;</b> </div></td>
+         <td style="border:none; visibility:hidden;">– 1</td>
+         <td style="border:none; visibility:hidden;">2</td>
+        </tr>
+      </table>
+    </td>
+    
+    <td class="td02 td03top  bold blue_color" style="text-align:left; font-size:85%; vertical-align:middle;">2 Point </td>
+    
+    <td class="txt_lft pmtwrth">
+        <div class="txt_Score_total txt_Score_total4" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu4"></span>/2)</b></div>
+        <div class="hidden fntsz " style="display:inline-block;">S</div>
+      </td>  
+  </tr>
+  
+  <!--<tr>
+    <td class="td1 forNoWrap td03top" style="text-align:right;">
+       <b><span class="port"><span class="font_nrml">Enter the Value</span></span></b>
+    </td>
+    
+    <td class="td03top" style="text-align:center;"></td>
+               
+    
+    <td class="td2 td03top" style="text-align:left;">
+       <div class="inputDiv"><input type="text" class="input8 input" id="inputText7" style="text-transform:lowercase;" spellcheck="false" tabindex="8" onKeyPress="keyPressed(event)" onFocus="myFocus(this)" autocomplete="off"/></div>
+      </td>
+                
+      <td class="td02 td03top  bold blue_color" style="text-align:left; font-size:85%;">2 Point</td>
+                
+      <td class="td3 td03top"><div class="tickDiv"> <b class="FntGrmnd red1 Wrng8">&#10006;</b><b class="FntGrmnd green Wrt8">&#10004;</b> </div></td>
+       
+      <td class="txt_lft pmtwrth">
+        <div class="txt_Score_total" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu0"></span>/2)</b></div>
+        <div class="hidden fntsz " style="display:inline-block;">S</div>
+      </td>        
+   </tr>-->
+                
+  
+  
+  
+<tr>
+  
+<td  class="promt_td" style="vertical-align:top;">
+<div class="tickDiv absolute tickset"> <b class="FntGrmnd red1 Wrng8">&#10006;</b><b class="FntGrmnd green Wrt8">&#10004;</b> </div>
+<div class="txt_Score_total txt_Score_total5" style="display:inline-block"><b class="">Score &nbsp;=&nbsp; (<span class="qu5"></span>/5)</b></div>
+<div class="hidden fntsz " style="display:inline-block;">S</div>
+</td>
+
+<td  class="promt_td" style="vertical-align:top;" colspan="4">
+  
+       	<div class="prompt_New blankMessage_New"><b>Enter the value.</b></div>
+        <div class="prompt_New incomplete_New"><b>Partially Correct.</b></div>
+        <div class="prompt_New  what_New"><b>What <span class="what_class"></span>?</b></div>
+         <div class="prompt_New SelectAns"><b>Select Answer.</b></div>
+        <div class="remark Rmkradio"><div class="respond bold" style="color:#339966;"><span id="FB_TxtBox"></span></div></div>
+	</td>
+    
+    
+  <td> <div class="doneDiv doneDivRadioNdInput"><button class="done1 done1Device" tabindex="9" onClick="doneButton()">Done</button></div></td>
+  </tr>
+  
+  </table>
+  
+  </td>
+  
+  </tr>
+  
+  
+  
+  </table>
+ 
+        
+
+  
+   </div>
+<!--+-+-+-+-+-+-+-+-+-+-+-+-+--++-+-+-+-++-++-+-+-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->            
+   
+          
+     </div>
+     
+    </div><!-- AreaForKeypadAndInputInDevice -->
+
+
+	<div class="solutionContainer">
+    
+	<div class="SolutionRemark"><div class="solutionText"><i>Solution</i>:</div>
+     </div>
+
+    <div class="solutionMainSteps">
+ 
+ <div class="ForLandscape">
+ 
+<div class="Step1_div middle">
+
+<table class="forAutoWidth fortab  landhide_show">
+<tr>
+ <td class="bold" colspan="3" style="padding-top:0px;">
+  <i>f</i> (<i>x</i>)  
+  <span class="hidden">1</span>=<span class="hidden">1</span>
+  <div class="fraction bold">
+    <span class="fup"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> <i>x</i> 
+    <span class="hidden">.</span>–<span class="hidden">.</span> 12 </span>
+    <span class="fdn"><i>x</i> <sup><small>2</small></sup> <span class="hidden">.</span>–<span class="hidden">.</span> 8 <i>x</i> 
+    <span class="hidden">.</span>+<span class="hidden">.</span> 16</span>
+  </div>
+  <span class="hidden">1</span>=<span class="hidden">1</span> 
+  <div class="fraction bold">
+    <span class="fup">(<i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4) 
+    (<i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3)</span>
+    <span class="fdn">(<i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4) 
+    (<i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4)</span> 
+  </div>
+  
+    <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span>
+
+  
+  <div class="fraction bold">
+    <span class="fup"><i>x</i><span class="hidden">.</span>+<span class="hidden">.</span>3</span>
+  	<span class="fdn"><i>x</i><span class="hidden">.</span>–<span class="hidden">.</span>4</span>
+  </div> 
+  <span class="hidden">1</span>=<span class="hidden">1</span>
+  <div class="fraction bold">
+    <span class="fup"><i>p</i> (<i>x</i>)</span> 
+    <span class="fdn"><i>q</i> (<i>x</i>)</span>
+  </div>
+ </td>
+</tr>
+
+
+<tr>
+ <td class="" colspan="3">
+  Reduced form of the function &nbsp;<b><i>f</i> (<i>x</i>)</b> &nbsp;is&nbsp; <b><i>f</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span> 
+  (<i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3) / (<i>x</i><span class="hidden">.</span>–<span class="hidden">.</span> 4)</b> <span style="visibility:hidden;">111</span><b>( <i>x</i> &nbsp;&#x2260;&nbsp; 4 )</b> 
+ </td>
+</tr>
+
+<tr>
+ <td class="" colspan="3"> 
+ <span class="red_color bold">(<i>a</i>)</span> <span class="hidden">1</span>
+ <b class="blue_color"><i>Zero</i></b> of &nbsp;<b><i>f</i> (<i>x</i>)</b> are given by &nbsp;<b><i>p</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span> 0   
+ <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span> 
+  <i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3 <span class="hidden">1</span>=<span class="hidden">1</span> 0  
+  <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span>
+  <strong class="red_color"><i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="red_color">– 3</span></strong></b>
+ </td>
+</tr>
+
+<tr>
+ <td class="" colspan="3"> 
+ <span class="red_color bold">(<i>b</i>)</span> <span class="hidden">1</span>
+  <b class="blue_color"><i>Horizontal asympotes</i></b><strong>&nbsp;:</strong> &nbsp;<b><i>y</i> <span class="hidden">1</span>=<span class="hidden">1</span>  
+  <strong>1 &nbsp;/&nbsp; 1</strong> 
+  <span class="hidden">1</span>=<span class="hidden">1</span> <span class="red_color">1</span></b>,
+  because deg &nbsp;<b><i>p</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span></b> deg <b><i>q</i> (<i>x</i>)</b>.
+  </td>
+</tr>
+
+<tr>
+ <td class="" colspan="3"> 
+ <span class="red_color bold">(<i>c</i>)</span> <span class="hidden">1</span>
+ <b class="blue_color"><i>Vertical asympotes</i></b> are given by &nbsp;<b><i>q</i> (<i>x</i>) <span class="hidden">1</span>=<span class="hidden">1</span> 0 
+ <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span> 
+ <i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4 <span class="hidden">1</span>=<span class="hidden">1</span> 0  
+  <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span>
+  <strong class="red_color"><i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="red_color">4</span></strong></b> 
+ </td>
+</tr>
+
+<tr>
+ <td class="bold"> 
+ <span class="red_color bold" style="float:left;">(<i>d</i>)</span> <span class="hidden">1</span>
+  <table class="subtbl" style="display:inline-table; margin-left:4em; text-align:center; line-height:90%;">
+   <tr>
+    <td><i>x</i></td>
+    <td>3</td>
+    <td>5</td>
+    <td class="red_color">0.5</td>
+    <td class="red_color">11</td>
+   </tr>
+   
+   <tr>
+    <td><i>y</i></td>
+    <td class="red_color">– 6</td>
+    <td class="red_color">8</td>
+    <td>– 1</td>
+    <td>2</td>
+   </tr>
+  </table>
+ </td>
+
+<td rowspan="4" style="padding-top:0px;">
+<img src="image/Sol1a.png" class="soluImg">
+</td>
+
+</tr>
+
+<tr>
+ <td class="bold" colspan="3"> 
+ <span class="pont1">
+   – 1 <span class="hidden">.</span>=<span class="hidden">.</span> 
+  (<i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3) / (<i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4)
+</span>
+ 
+ <span class="pont2">
+   2 <span class="hidden">.</span>=<span class="hidden">.</span>  
+   (<i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3) / (<i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 4)
+ </span>
+ </td>
+</tr>
+
+<tr>
+ <td class="bold" colspan="3" style="position:relative;"> 
+ <img src="image/arrow_b.png" class="arrow1">
+ <img src="image/bottom_left.png" class="arrow2">
+ 
+ <span class="pont12">
+  <b class="bigTilde green_color">&rArr;</b> <span class="hidden">1</span>
+   – <i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 4 
+   <span class="hidden">1</span>=<span class="hidden">1</span> 
+   <i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3 
+ </span>
+ 
+  <span class="pont22">
+  <b class="bigTilde green_color">&rArr;</b> <span class="hidden">1</span>
+   2 <i>x</i> <span class="hidden">.</span>–<span class="hidden">.</span> 8 
+   <span class="hidden">1</span>=<span class="hidden">1</span> 
+   <i>x</i> <span class="hidden">.</span>+<span class="hidden">.</span> 3 
+ </span>
+ </td>
+</tr>
+
+<tr>
+ <td class="bold" colspan="3"> 
+ <span class="pont13">
+  <b class="bigTilde green_color">&rArr;</b> <span class="hidden">1</span>
+   2 <i>x</i> <span class="hidden">.</span>=<span class="hidden">.</span> 1
+   <span class="hidden">1</span><b class="bigTilde green_color">&rArr;</b><span class="hidden">1</span> 
+   <i>x</i> <span class="hidden">1</span>=<span class="hidden">1</span> 
+  1 / 2
+ </span>
+ 
+  <span class="pont23">
+   <b class="bigTilde green_color">&rArr;</b> <span class="hidden">1</span>
+   <i>x</i> <span class="hidden">1</span>=<span class="hidden">.</span> 11 
+ </span>
+ 
+ 
+  
+ </td>
+</tr>
+
+</table>
+
+</div><!-- Step1_div middle end --> 
+ 
+  </div><!--ForLandscape end-->
+  
+ <!-- ////////////////////////////////////////////////////////////////       FOR POTRAIT  //////////////////////////////////////////////////////////////-->      
+ 
+  <div class="FoPotrait">
+ 
+<div class="Step1_div middle">
+
+<table class="fortab">
+<tr>
+	<td class="bold txt_right red1">
+     <i>Profit</i> 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <i class="red1">Revenue</i>  <span class="hidden">1</span>–<span class="hidden">1</span> <i class="red1">Cost</i>
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+     <sup style="visibility:hidden;"><small>2</small></sup><i>P</i> (<i>x</i>) 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden"><sup style="visibility:hidden;"><small>2</small></sup></span>
+    </td>
+    
+    <td class="bold txt_left">
+     <i>R</i> (<i>x</i>)   <span class="hidden">1</span>–<span class="hidden">1</span> <i>C</i> (<i>x</i>) <sup style="visibility:hidden;"><small>2</small></sup>
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+      <i>R</i> (<i>x</i>) 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <img src="image/bracelft.png" class="brclft">
+     <span class="qu1"></span> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i></span>
+        <span class="fdn"><span class="qu2"></span></span>
+     </div>
+     <img src="image/bracrght.png" class="brcrght"> <sup style="vertical-align:1.2em; visibility:hidden;"><small>2</small></sup>
+     <i>x</i>
+     
+     <span class="hidden">1</span>–<span class="hidden">1</span>
+     
+     ( <span class="qu3"></span> <span class="hidden">1</span>+<span class="hidden">1</span> <span class="qu4"></span> <i>x</i> )
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1"></span> <i>x</i> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i> <sup><small>2</small></sup></span>
+        <span class="fdn"><span class="qu2"></span></span>
+    </div>  <span class="hidden">1</span>–<span class="hidden">1</span> 
+    <span class="qu3"></span> <span class="hidden">1</span>–<span class="hidden">1</span> <span class="qu4"></span> <i>x</i>
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1qu4_sub"></span> <i>x</i> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i> <sup><small>2</small></sup></span>
+        <span class="fdn"><span class="qu2"></span></span>
+    </div>  <span class="hidden">1</span>–<span class="hidden">1</span> 
+    <span class="qu3"></span>
+    </td>
+</tr>
+
+</table>
+
+</div><!-- Step1_div middle end --> 
+ 
+
+
+<div class="Step2_div middle">
+
+<table class="fortab1">
+<tr>
+    <td class="bold" colspan="3" style="padding-top:0px;"><i class="blue_color">The mathematical model for profit is to maximize</i> <b><i>P</i> (<i>x</i>)</b>.</td>
+</tr>
+
+
+<tr>
+	<td class="bold txt_right">
+      <i>P</i> (<i>x</i>) 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1qu4_sub"></span> <i>x</i> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i> <sup><small>2</small></sup></span>
+        <span class="fdn"><span class="qu2"></span></span>
+     </div> <span class="hidden">1</span>–<span class="hidden">1</span> <span class="qu3"></span>,&nbsp;
+    0 <span class="hidden">1</span>&le;<span class="hidden">1</span> <i>x</i> <span class="hidden">1</span>&le;<span class="hidden">1</span> <span class="qu5"></span>
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1qu4_sub"></span> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i></span>
+        <span class="fdn"><span class="qu2Div"></span></span>
+     </div>
+     </td>
+</tr>
+
+<tr>
+    <td class="" colspan="3">For critical points of <b> <i>P</i> (<i>x</i>)</b>, we solve <b><i>P</i> ' (<i>x</i>) 
+    <span class="hidden">1</span>=<span class="hidden">1</span> 0 <sup style="visibility:hidden;"><small>2</small></sup></b></td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1qu4_sub"></span> <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><i>x</i><sup style="visibility:hidden;"><small>2</small></sup></span>
+        <span class="fdn"><span class="qu2Div"></span></span>
+     </div>
+     
+     <span class="hidden">1</span>=<span class="hidden">1</span> 0
+     </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    <i>x</i>
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="qu1qu4_sub"></span> <span class="hidden">1</span>×<span class="hidden">1</span> <span class="qu2Div"></span>
+     <span class="hidden">1</span>=<span class="hidden">1</span> <span class="value1 green"></span>
+     </td>
+</tr>
+
+</table>
+
+
+</div><!-- Step2_div middle end --> 
+
+
+
+<div class="Step3_div middle">
+
+<table class="fortab2">
+<tr>
+    <td class="bold blue_color" colspan="4" style="padding-top:0px;"><i>Use the second derivative test for absolute extrema</i>:</td>
+</tr>
+
+
+<tr>
+	<td class="bold txt_right">
+      <i>P</i> '' (<i>x</i>) 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+     <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup">1</span>
+        <span class="fdn"><span class="qu2Div"></span></span>
+     </div> <span class="hidden">1</span>&lt;<span class="hidden">1</span> 0 <span style="font-weight:normal;">for all</span> <i>x</i> 
+    </td>
+</tr>
+
+
+<tr>
+    <td class="" colspan="4" style="padding-top:0px;">Since 
+    <b><i>x</i> <span class="hidden">.</span>=<span class="hidden">.</span> <span class="value1 green"></span></b> is the only critical points and 
+    <b><i>P</i> ''(<i>x</i>) <span class="hidden">.</span><<span class="hidden">.</span> 0</b>,</td>
+</tr>
+
+
+<tr>
+	<td class="txt_right">
+     Maximum  <b><i>P</i> (<i>x</i>)</b> 
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+    <i>P</i> ( <span class="value1"></span> ) <span class="hidden">1</span>=<span class="hidden">1</span> 
+    <span class="red1">$ <span class="ans1"></span> </span> 
+    </td>
+</tr>
+
+<tr>
+	<td class="txt_right">
+    When the demand <b><i>x</i></b>
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="txt_left">
+     <span class="bold value1"></span>, the price is
+    </td>
+</tr>
+
+<tr>
+	<td class="bold txt_right">
+    </td>
+    
+    <td class="bold txt_center">
+    <span class="hidden">1</span>=<span class="hidden">1</span>
+    </td>
+    
+    <td class="bold txt_left">
+    <span class="qu1"></span>
+     <span class="hidden">1</span>–<span class="hidden">1</span>
+     <div class="fraction">
+        <span class="fup"><span class="value1"></span></span>
+        <span class="fdn"><span class="qu2"></span></span>
+     </div> <span class="hidden">1</span>=<span class="hidden">1</span> <span class="red1">$ <span class="ans2"></span> </span>
+    </td>
+</tr>
+
+<tr>
+    <td class="" colspan="4" style="white-space:normal;">
+    A maximum profit of <span class="red_color bold">$ <span class="ans1"></span></span> 
+    is  realized when <span class="red_color bold"><span class="value1"></span></span> shredders are manufactured annually and  sold for 
+    <span class="red_color bold">$ <span class="ans2"></span> </span> each.
+    </td>
+</tr>
+
+</table>
+
+</div><!-- Step3_div middle end -->  
+ 
+ 
+  
+  </div><!--Forportrait end-->
+ 
+</div><!-- solutionMainSteps end -->    
+    </div>	<!-- solutionContainer closed-->
+</div>	<!-- container closed-->
+
+<div class="footer">
+
+<table class="FooterTable">
+        <tr>
+          <td class="FtrTab_Td1" width="10%"><img src="image/print.png" class="print"/> </td>
+          <td class="FtrTab_Td2" width="10%"><img src="image/AutoRun.png" class="autorun"/></td>
+  <td class="FtrTab_Td3" width="50%"><div class="SpaceBarDiv"><button class="SpaceBarButton spacebar" onClick="spacebarClickFunction()">Click or Press Spacebar to Continue</button></div></td>
+          <td class="FtrTab_Td4" width="30%"><div class="Copyright">Copyright © 2005 – 2019 <span class="ForDeviceCopy">Educo Int. Inc.</span></div></td>
+        </tr>
+</table>
+
+</div>	<!-- footer closed-->
+  
+
+</div>		<!-- container-fluid closed-->
+
+
+</body>
+</html>

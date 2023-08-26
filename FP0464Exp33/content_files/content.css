@@ -1,0 +1,439 @@
+.clear{margin-left:5%;}
+.txt_Score_total{color:blue;}
+.tab{margin-left:3%;}
+tr,td{/*border:1px solid #CCC;*/}
+.bold{font-weight:bold;}
+.inputAndDoneSpace{float:right; width:100%; margin-right:0%; margin-left:0%; margin-top:-5%;}
+.InputAndDoneTbl{width:100%;}
+.InptDnTd0{width:51%; text-align:right;}
+.InptDnTd1{width:50%; text-align:center;}
+.InptDnTd2{width:10%;}
+.inputDiv{margin-top:0%;}
+.blankMessage_New{margin-left:46%; float:none; white-space:normal;}
+.remark{float:none; display:inline-block}
+.fraction span.fup{padding-top:0em; padding-bottom:0.15em;}
+.fraction span.fdn{border-top: 1px solid;}
+.inputAndDoneSpaceFordevice{width:95%; margin-left:0%;}
+.solutionMainSteps{ margin-top:0px; width:85%; margin-left:15%;}
+.frac_red span.fdn{border-top:1px solid #C00;}
+.pre{ white-space:pre;}
+.red1,.red2,.red3,.red4,.red5,.red6,.red7,.red8{color:red;}
+
+	
+/*************************************root********************************/
+.font{font-family:"Times New Roman", Times, serif;}
+.math{font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold;}
+.timesnew{font-family:"Times New Roman", Times, serif;}
+/******************************************************************************/
+
+.InputAndDoneTbl{width:60%; white-space:nowrap;}
+.InptDnTd1{width:43%;}
+.InptDnTd2{width:25%;}
+
+
+.green{ color:green;}
+.darkgreen_color{color:darkgreen;}
+.magenta_color{color:#F06;}
+.brown_color{color:brown;}
+.voilet_red{color: mediumvioletred;}
+.red_color{ color:#ea0000;}
+.red1 {
+    color: #F00;
+}
+.blue_color{color:#00F;}
+.StpBtnCmn{margin-left:18%;}
+.hidden{ visibility:hidden;}
+.ForLandscape{display:inline; line-height:100%;}
+.FoPotrait{display:none;}	
+
+
+
+
+.fortab{margin-left:auto; margin-right:auto; white-space:nowrap;}
+.fortab td{padding-top:0.4em;}
+.fortab1 td{padding-top:0.15em;}
+.fortab2 td{padding-top:0.3em; white-space:nowrap;}
+.txt_lft{ text-align:left;}
+.txt_center{text-align:center;}
+.txt_right{text-align:right;}
+.fortab1,.fortab2{ margin:0 auto;} 
+
+
+
+/****************************************************CSS**********************************************************/
+.newClearBtn{margin-left:22%!important;}
+.brclft,.brcrght{ vertical-align:middle; width:0.17em;}
+.small_brc_lft{ vertical-align:middle; width:0.35em;}
+.brclftc,.brcrghtc{ vertical-align:middle; width:0.35em;}
+.cross{
+    width: 0.8em;
+    vertical-align: top;
+    float: right;
+	cursor:pointer;
+}
+.mini_tablBtn {
+    width: auto;
+    border: 1.5px solid #cc00009e;
+    background-image: linear-gradient(45deg, rgba(102, 255, 50, 1), hsl(66, 81%, 62%));
+    display: inline-block;
+    padding: 0.1em;
+    padding-left: 1%;
+    padding-right: 0.5em;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    cursor: pointer;
+    margin-left: 8%;
+}
+.tablesolu {
+	white-space:nowrap;
+    font-size: 0.85em;
+    border: 1.5px solid darkgoldenrod;
+    border-collapse: collapse;
+    padding: 0.4em;
+    box-shadow: 1px 1px 2px steelblue;
+    text-align: left;
+    background-image: linear-gradient(45deg, rgba(255, 153, 0, 0.42), rgba(255, 255, 0, 0.07));
+    position: absolute;
+    background-color: floralwhite;
+	z-index:1000;
+}
+.fortab1 td{ white-space:nowrap;}
+
+
+.AreaForKeypadAndInputInDevice{width:80%;}
+.inputAndDoneSpaceFordevice{width:98%; margin-left:0%;}
+.input_div{padding-left:2%; padding-right:2%; padding-top:1%;}
+.input_table {
+    font-size: 0.9em;
+    width: 100%;
+    background-color: white;
+    border: 1px double #999;
+    box-shadow: 1px 1px 2px #696969;
+    background-image: linear-gradient(280deg, #fcffff, #e4fcff);
+    background-image: -webkit-linear-gradient(280deg, #fcffff, #e4fcff);
+    background-image: -moz-linear-gradient(280deg, #fcffff, #e4fcff);
+}
+.input_table, .input_bdr{border-collapse:collapse;}
+.input_table td{padding:0.2em; font-size:95%;}
+.forNoWrap{white-space:nowrap;}
+.td2{width:27%;}
+.td3{width:2%;}
+.doneDiv{width:30%; float:right; margin-bottom:.3em;}
+.second_input{width:100%; margin-top:1%;}
+.promt_td, .container {position:relative;}
+.blankMessage_New{margin-left:0%; MARGIN-TOP:0%;}
+.incomplete_New{margin-top:0px; margin-left:0px;}
+.remark{width:70%; text-align:right;}
+.input{width:97%;}
+.input01{width:100%;}
+.remark{width:99%; padding-top:0%; text-align:right;}
+.td03top{ vertical-align:top;}
+.input_table td{ white-space:nowrap;}
+.intbl td {
+    border: 1.5px solid #000;
+}
+.intbl{ border-collapse:collapse;}
+.input_table{ font-size:96%;}
+.imginput0 {
+    width:6em;
+    border: 1px solid grey;
+    display: block;
+	background-color:#FFF;
+}
+.pmtwrth{ width:24%;}
+.subtbl td{ border:1.5px solid #000;  padding:0.5em;}
+.subtbl {
+    border-collapse: collapse;
+    box-shadow: 1px 0.5px 0px blue;
+}
+.pont1,.pont2{ font-size:90%;}
+.pont1{padding-left:0.5em; font-size:90%;}
+.pont2{padding-left:5.3em; font-size:90%;}
+.pont12{padding-left:1em; font-size:90%;}
+.pont22{padding-left:4.7em; font-size:90%;}
+.pont13{padding-left:1em; font-size:90%;}
+.pont23{padding-left:2.4em; font-size:90%;}
+.pdngl{ padding-left:12em!important; white-space:nowrap;}
+.prompt_New { white-space:nowrap}
+.font_nrml{ font-weight:normal;}
+.AreaForKeypadAndInputInDevice{margin-right:10%;}
+.txt_Score_total {
+    border: 1px solid;
+    padding: 0.1em;
+    font-size: 80%;
+    vertical-align: top;
+    background-color: #fff;
+    box-shadow: 0.8px 0.8px 0px #757575;
+    text-shadow: 0.5px 0.5px 1px white;
+}
+.soluImg {
+    padding-left: 18em;
+    width: 10.3em;
+    margin-top: -1.2em;
+}
+.arrow1 {
+    position: absolute;
+    width: 0.25em;
+    left: 14.5em;
+    bottom: 2.4em;
+}
+.arrow2 {
+    position: absolute;
+    width: 3em;
+    bottom: 1.8em;
+    left: 9.7em;
+    top: -1.7em;
+    height: 1.5em;
+}
+.ClickToAnsDiv{margin-top:-4%!important;}	
+.imgMsk {
+    position: absolute;
+    left: 8.5em;
+    top: 0.2em;
+}
+.bigTilde{ font-size:1.2em; }
+
+.green_color{ color:#0b0; }
+
+.subtbl td {
+    border: 1px solid #5c6bc0;
+}
+
+.brdrBlue{border: 1px solid #5c6bc0}
+
+
+.border0 td{border-top:0px solid black;}
+.InputAndDoneTbl td{padding:1% 0%;} 
+td .option1, td .option2, td .option3 {border-bottom:2px solid #666; padding:0.2em;}
+.tc {
+    text-align: center;
+}
+.absolute {
+    position: absolute;
+}
+.relative{position:relative;}
+.tickset{left:7em;}
+.subtbl01{ width:8em;}
+@media (min-width: 450px) and (max-width: 530px)
+{
+}
+@media (min-width: 531px) and (max-width: 610px)
+{
+}
+@media (min-width: 611px) and (max-width: 690px)
+{
+}
+@media (min-width: 691px) and (max-width: 770px)
+{
+}
+@media (min-width: 771px) and (max-width: 850px)
+{
+}
+@media (min-width: 851px) and (max-width: 930px)
+{
+}
+@media (min-width: 931px) and (max-width: 1010px)
+{
+}
+@media (min-width: 1011px) and (max-width: 1100px)
+{
+}
+
+/********************************************************************************************************/
+@media (min-width: 450px) and (max-width: 1100px)
+{
+.input_table {font-size:67%;}	
+.imginput0{width:9em;}
+.AreaForKeypadAndInputInDevice{display:inline-block; float:right; width:100%;margin-right: 0%;}
+.KeypadBoundary{min-height:48px; margin-top:1px; width:38%; float:right; margin-right:1%;}
+.inputAndDoneSpaceFordevice{width:62%; margin-left:0%;}
+.fortab td{padding-top:0.4em;}
+}
+/********************************************************************************************************/
+@media (min-width: 1101px) and (max-width: 1400px)
+{
+	
+.newClearBtn{margin-left:18%!important;}
+.AreaForKeypadAndInputInDevice{width:88%; margin-right:3em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}
+/*@media (min-width: 1286px) and (max-width: 1400px)
+{
+.ClickToAnsDiv{margin-top:-2%!important;}
+.container-fluid{font-size:20px;}
+.fortab td {padding-top: 0.3em;}
+}*/
+@media (min-width: 1401px) and (max-width: 1550px)
+{
+.AreaForKeypadAndInputInDevice{width:88% ;margin-right:4em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}
+@media (min-width: 1551px) and (max-width: 1700px)
+{
+.AreaForKeypadAndInputInDevice{width:83%; margin-right:4em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}	
+@media (min-width: 1701px) and (max-width: 1850px)
+{
+.newClearBtn{margin-left:25%!important;}
+.AreaForKeypadAndInputInDevice{width:89%; margin-right:3em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}
+@media (min-width: 1851px) and (max-width: 2000px)
+{
+.newClearBtn{margin-left:25%!important;}
+.AreaForKeypadAndInputInDevice{width:82%; margin-right:5em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}
+@media (min-width: 2001px)
+{
+.newClearBtn{margin-left:25%!important;}
+.AreaForKeypadAndInputInDevice{width:82%; margin-right:5em;}
+.pdngl{ padding-left:19em!important; white-space:nowrap;}
+}
+
+ 					/*<-- Portrait-->*/
+				 	/*<------------- Portrait --------------->*/
+
+ 
+@media (min-width: 320px) and (max-width: 370px) and (orientation:portrait)
+{
+.fortab td{padding-top:0.5em;}	
+.fortab1 td{padding-top:0.5em;}	
+.fortab2 td{padding-top:0.5em;}	
+.inputAndDoneSpaceFordevice{width:100%; margin-left:0%;}
+}
+@media (min-width: 371px) and (max-width: 420px) and (orientation:portrait)
+{
+.inputAndDoneSpaceFordevice{width:100%; margin-left:0%;}
+}
+@media (min-width: 421px) and (max-width: 470px) and (orientation:portrait)
+{
+.inputAndDoneSpaceFordevice{width:100%; margin-left:0%;}
+}
+@media (min-width: 471px) and (max-width: 520px) and (orientation:portrait)
+{
+.inputAndDoneSpaceFordevice{width:100%; margin-left:0%;}
+.KeypadBoundary{width:70%; margin-right:4%;}
+
+}
+@media (min-width: 521px) and (max-width: 560px) and (orientation:portrait)
+{
+.KeypadBoundary{width:90%;}	
+.inputAndDoneSpaceFordevice{width:100%; margin-left:4%;}
+}
+@media (min-width: 561px) and (max-width: 640px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%;}	
+.inputAndDoneSpaceFordevice{width:90%; margin-left:11%;}
+}
+@media (min-width:641px) and (max-width: 720px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%;}	
+.inputAndDoneSpaceFordevice{width:80%; margin-left:19%;}
+}
+@media (min-width: 721px) and (max-width: 800px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%; margin-right:5%;}	
+.inputAndDoneSpaceFordevice{width:80%; margin-left:19%;}
+}
+@media (min-width: 801px) and (max-width: 880px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%; margin-right:5%;}	
+.inputAndDoneSpaceFordevice{width:80%; margin-left:19%;}
+}
+@media (min-width: 881px) and (max-width: 960px) and (orientation:portrait)
+{
+.KeypadBoundary{width:50%; margin-right:5%;}	
+.inputAndDoneSpaceFordevice{width:60%; margin-left:38%;}
+}
+@media (min-width: 961px) and (max-width: 1040px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%; margin-right:5%;}	
+.inputAndDoneSpaceFordevice{width:73%; margin-left:25%;}
+}
+@media (min-width: 1041px) and (orientation:portrait)
+{
+.KeypadBoundary{width:70%; margin-right:5%;}	
+.inputAndDoneSpaceFordevice{width:73%; margin-left:24%;}
+.ForLandscape{display:none}
+.FoPotrait { display:block;}
+.doneDiv{width:100%;}
+}
+
+
+@media (min-width: 320px) and (max-width: 1041px) and (orientation:portrait)
+{
+.input{width:100%;}	
+.input_div{padding-left:0%; padding-right:4%;}	
+.AreaForKeypadAndInputInDevice{width:100%; margin-left:0%;}
+.done1{ height:27.25px!important;} 
+.td2 {width:55%;}
+.input_table{font-size:0.8em;}
+.smalldiv{ display:inline-block}
+
+.fortab td {padding-top:1em;}	
+.fortab1 td{padding-top:1em;}
+.flex{display:block;}
+.fortab td{white-space:nowrap;}
+.ForLandscape{display:none;}
+.FoPotrait{display:inline;}
+}
+
+
+
+/*.prompt_New,.remark{
+	position:static;
+	line-height:100%;
+	width:auto;
+	margin-left:0%;
+	margin-top:0%;
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+	}
+.remark {
+    padding-top: 0px;
+    vertical-align: middle;
+}*/
+.ClickToAnsDiv{
+/*	position:absolute;
+*/	margin-left:0%;
+	margin-right:4%;
+	margin-top:0%;
+	bottom:2%;
+	right:2%;
+}	
+	.header{
+		position:relative;
+		}
+
+.inputAndDoneSpaceFordevice {
+
+    margin-top: 0px;
+
+}
+
+/*----- 32 -------*/
+.solutionMainSteps {
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+
+.tab:focus,.done1:focus
+{
+	outline:none;
+}
+.remark{display:inline;}
+.header {
+	
+	background-image:none;
+}
+
+
+
+
+/*****************************************************************Done 27-11-2020 Corr***************************************************************************/
